@@ -1,19 +1,19 @@
-# My Project — Module 11
+# My Project - Module 11
 
 ## Running Tests Locally
 
 ```bash
 # Start PostgreSQL
-docker-compose up -d db
+docker compose up -d postgres
 
 # Install dependencies
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 
 # Unit tests (no DB needed)
-pytest tests/unit -v
+python -m pytest tests/unit -v
 
 # Integration tests (needs PostgreSQL)
-DATABASE_URL=postgresql://user:password@localhost:5432/mydb pytest tests/integration -v
+TEST_DATABASE_URL=postgresql://user:password@localhost:55433/mydb python -m pytest tests/integration -v
 ```
 
 ## Docker Hub
