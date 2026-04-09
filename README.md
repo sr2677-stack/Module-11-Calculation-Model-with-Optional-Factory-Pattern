@@ -17,10 +17,10 @@ TEST_DATABASE_URL=postgresql://user:password@localhost:55433/mydb python -m pyte
 ```
 
 ## Docker Hub
-Image: https://hub.docker.com/r/YOUR_USERNAME/my_project
+Image: https://hub.docker.com/r/sr2677stack/my_project
 
 Pull and run:
 ```bash
-docker pull YOUR_USERNAME/my_project:latest
-docker run -p 8000:8000 -e DATABASE_URL=... YOUR_USERNAME/my_project:latest
+docker pull sr2677stack/my_project:latest
+docker run -p 8000:8000 sr2677stack/my_project
 ```
